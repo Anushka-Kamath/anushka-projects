@@ -18,9 +18,8 @@ print list6
 print list7
 print list8
 
-n=input("enter column order:")
-m=input("enter row order")
-cross=m*n
+n=input("enter order:") 
+cross=n*n
 print "no. of locations for traversal = ",cross
 c=0
 
@@ -40,12 +39,12 @@ while roll_die=="y" and flag==0:
 	else:
 		pos=pos+rd
 		c=c+rd
-		#increment r and reset c when the c number exceeds n
+		
 		if(c>n):
 			c=c%n
 			r=r+1
 		if(r%2==0):
-			cs=m+1-c
+			cs=n+1-c
 		else:
 			cs=c
 
